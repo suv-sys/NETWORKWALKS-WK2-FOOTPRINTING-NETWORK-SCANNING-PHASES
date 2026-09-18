@@ -116,7 +116,7 @@ WHOIS information can help a security professional understand the publicly visib
 
 ### Evidence
 
-**[INSERT SCREENSHOT – WHOIS RESULT]**
+[WHOIS RESULT](pm1t1.png)
 
 ---
 
