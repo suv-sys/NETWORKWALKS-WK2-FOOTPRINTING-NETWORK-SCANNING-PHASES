@@ -268,7 +268,7 @@ Identifying a WAF can help security professionals understand part of the defensi
 
 ### Evidence
 
-**[INSERT SCREENSHOT – WAFW00F RESULT]**
+![INSERT SCREENSHOT – WAFW00F RESULT](Screenshots/pm1t6.png)
 
 ---
 
@@ -306,7 +306,7 @@ DNS information can help security professionals understand an organization's pub
 
 ### Evidence
 
-**[INSERT SCREENSHOT – DNSRECON RESULT]**
+![INSERT SCREENSHOT – DNSRECON RESULT](Screenshots/pm1t6.png)
 
 ---
 
@@ -328,7 +328,9 @@ Maltego was successfully installed and opened on the system.
 
 ### Evidence
 
-**[INSERT SCREENSHOT – MALTEGO INSTALLED / APPLICATION WINDOW]**
+![MALTEGO INSTALLED / APPLICATION WINDOW](Screenshots/mel2.png)
+![MALTEGO INSTALLED / APPLICATION WINDOW](Screenshots/mel3.png)
+![MALTEGO INSTALLED / APPLICATION WINDOW](Screenshots/mel5.png)
 
 ---
 
@@ -352,11 +354,11 @@ Maltego returned email-related entities associated with the target domain.
 
 **Number of email addresses identified:**
 
-**[INSERT NUMBER]**
+[INSERT NUMBER]
 
 **Email addresses identified:**
 
-**[INSERT YOUR ACTUAL MALTEGO RESULTS]**
+[INSERT YOUR ACTUAL MALTEGO RESULTS]
 
 ### Security Relevance
 
@@ -366,7 +368,7 @@ The discovery of an email address does **not** indicate that the account is comp
 
 ### Evidence
 
-**[INSERT SCREENSHOT – MALTEGO EMAIL RESULTS]**
+![MALTEGO EMAIL RESULTS](Screenshots/mel7.png)
 
 ---
 
@@ -384,7 +386,8 @@ I downloaded and installed Zenmap on my Windows computer and successfully launch
 
 ### Evidence
 
-**[INSERT SCREENSHOT – ZENMAP APPLICATION]**
+![ZENMAP APPLICATION](Screenshots/znmap1.png)
+
 
 ---
 
@@ -408,15 +411,15 @@ I opened Windows Command Prompt and executed the `ipconfig` command. I examined 
 
 **Local IPv4 address:**
 
-**[INSERT YOUR IP ADDRESS]**
+192.168.1.118
 
 **Subnet information:**
 
-**[INSERT YOUR SUBNET]**
+255.255.255.0
 
 ### Evidence
 
-**[INSERT SCREENSHOT – IPCONFIG RESULT]**
+![IPCONFIG RESULT](Screenshots/znmap2.png)
 
 ---
 
@@ -436,7 +439,8 @@ Zenmap identified multiple responding hosts within the local subnet.
 
 ### Evidence
 
-**[INSERT SCREENSHOT – ZENMAP PING SCAN RESULT]**
+![ZENMAP PING SCAN RESULT](Screenshots/znmap5.png)
+![ZENMAP PING SCAN RESULT](Screenshots/znmap3.png)
 
 ---
 
@@ -448,11 +452,11 @@ To determine how many hosts were active in the local subnet.
 
 ### Observation
 
-**Total number of live hosts discovered: [INSERT NUMBER]**
+**Total number of live hosts discovered: [4-5]
 
 ### Evidence
 
-**[INSERT SCREENSHOT SHOWING LIVE HOSTS]**
+![SHOWING LIVE HOSTS](Screenshots/znmap3.png)
 
 ---
 
@@ -466,12 +470,10 @@ To record the IP addresses of the active hosts discovered during the scan.
 
 | **No.** | **Live Host IP Address** |
 | ------: | ------------------------ |
-|       1 | [INSERT IP]              |
-|       2 | [INSERT IP]              |
-|       3 | [INSERT IP]              |
-|       4 | [INSERT IP]              |
-|       5 | [INSERT IP]              |
-|     ... | [ADD AS REQUIRED]        |
+|       1 | 192.168.1.1              |
+|       2 | 192.168.1.173            |
+|       3 | 192.168.1.174            |
+|       4 | 192.168.1.118            |
 
 ### Security Relevance
 
@@ -479,7 +481,7 @@ Identifying active hosts provides an overview of devices currently responding on
 
 ### Evidence
 
-**[INSERT SCREENSHOT – ZENMAP HOST LIST]**
+![ZENMAP HOST LIST](Screenshots/znmap3.png)
 
 ---
 
@@ -491,21 +493,17 @@ To identify the MAC addresses associated with discovered hosts where the informa
 
 ### Results
 
-| **No.** | **IP Address** | **MAC Address** |
-| ------: | -------------- | --------------- |
-|       1 | [INSERT IP]    | [INSERT MAC]    |
-|       2 | [INSERT IP]    | [INSERT MAC]    |
-|       3 | [INSERT IP]    | [INSERT MAC]    |
-|       4 | [INSERT IP]    | [INSERT MAC]    |
-|       5 | [INSERT IP]    | [INSERT MAC]    |
+| **No.** | **IP Address** | **MAC Address**    |
+| ------: | -------------- | ---------------    |
+|       1 | 192.168.1.1    | 54:AF:97:EF:DE:98  |
+|       2 | 192.168.1.173  | CA:AD:EE:6A:A2:5D  |
+|       3 | 192.168.1.174  | 36:C2:B8:C5:9B:52  |
+|       4 | 192.168.1.118  | 50:BB:B5:D1:CF:4E  |
 
 ### Security Relevance
 
 MAC addresses provide information about network interfaces and can help administrators identify and track devices on a local network. The availability of MAC information depends on the network configuration and scanning conditions.
 
-### Evidence
-
-**[INSERT SCREENSHOT – MAC ADDRESS RESULTS]**
 
 ---
 
@@ -527,7 +525,7 @@ The topology displayed the discovered network hosts and their relationships base
 
 ### Evidence
 
-**[INSERT SCREENSHOT – ZENMAP TOPOLOGY]**
+![ZENMAP TOPOLOGY](Screenshots/zntopo.png)
 
 **Saved topology file:**
 
@@ -535,56 +533,9 @@ The topology displayed the discovered network hosts and their relationships base
 
 ---
 
-# 8. Risk Analysis and Security Observations
 
-The practical activities produced several observations that are relevant from a defensive cybersecurity perspective.
 
-| **No.** | **Finding / Observation**                            | **Source** | **Potential Security Relevance**                                              | **Risk Level** |
-| ------: | ---------------------------------------------------- | ---------- | ----------------------------------------------------------------------------- | -------------- |
-|       1 | Public domain registration information is available  | WHOIS      | May contribute to an organization's public footprint                          | Low            |
-|       2 | Web technologies can be fingerprinted                | WhatWeb    | Technology information may assist further authorized security assessment      | Medium         |
-|       3 | Domain resolves to a publicly accessible IP address  | Nslookup   | Provides information about the location of the public-facing service          | Low            |
-|       4 | HTTP response headers are publicly observable        | curl       | May disclose technical information depending on configuration                 | Low            |
-|       5 | WAF information can potentially be identified        | Wafw00f    | Provides information about defensive infrastructure                           | Low            |
-|       6 | DNS records are publicly discoverable                | DNSRecon   | Can help build a picture of public-facing infrastructure                      | Medium         |
-|       7 | Publicly associated email addresses were identified  | Maltego    | Public contact information may be targeted for phishing or social engineering | Medium         |
-|       8 | Multiple live hosts were discovered on the local LAN | Zenmap     | Helps administrators identify and inventory network devices                   | Medium         |
 
-**Important:** These are **security observations, not confirmed vulnerabilities**.
-
-The ability to discover a domain's IP address, DNS records, web technologies, email addresses, or network hosts does not by itself demonstrate that a system is vulnerable.
-
-No exploitation or unauthorized access was performed during these practical activities.
-
----
-
-# 9. Recommendations
-
-Based on the observations from the practical exercises, the following defensive recommendations can be considered:
-
-### 1. Review Publicly Exposed Information
-
-Organizations should periodically review information that is publicly available about their domains, infrastructure, technologies, and contact details.
-
-### 2. Keep Web Technologies Updated
-
-CMS platforms, plugins, frameworks, and other web technologies should be regularly updated and reviewed against relevant security advisories.
-
-### 3. Review HTTP Security Headers
-
-Web servers should be configured to minimize unnecessary technical information disclosure and implement appropriate security headers.
-
-### 4. Monitor DNS Records
-
-Organizations should regularly review DNS records and remove obsolete or unnecessary records.
-
-### 5. Properly Configure the WAF
-
-Where a WAF is deployed, it should be appropriately configured, monitored, and maintained.
-
-### 6. Protect Organizational Email Accounts
-
-Publicly exposed email addresses should be protected with strong authentication, multi-factor authentication where appropriate, spam protection, and phishing awareness measures.
 
 ### 7. Maintain an Internal Network Inventory
 
@@ -604,7 +555,7 @@ Reconnaissance, scanning, enumeration, and other penetration-testing activities 
 
 ---
 
-# 10. Skills Learned
+# 8. Skills Learned
 
 During the Week 2 practical activities, I developed the following skills:
 
