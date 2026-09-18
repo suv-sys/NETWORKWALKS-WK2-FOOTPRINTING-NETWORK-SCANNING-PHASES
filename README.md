@@ -9,7 +9,7 @@
 | **Details**                         | **Information**                                                                                       |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | **Pentester Name**                  | **SUVARNA**                                                                                       |
-| **Program/Batch**                   | **B082-Networkwalks**                                                                                 |
+| **Program/Batch**                   | **B083-Networkwalks**                                                                                 |
 | **Date**                            | **18 September 2026**                                                                                 |
 | **Modules Completed**               | **W2-PM1 – Multiple Kali Tools**<br>**W2-PM3 – Maltego Footprinting**<br>**W2-PM5 – Zenmap Scanning** |
 | **Client/Target**                   | **Networkwalks (`networkwalks.com`) – authorized internship target**<br>**My own local LAN network**  |
@@ -144,7 +144,7 @@ I used WhatWeb from Kali Linux to fingerprint the authorized website. The tool a
 
 The output provided information about technologies detected on the website.
 
-**Actual result from my lab:**
+
 
 
 
@@ -182,9 +182,6 @@ I used Nslookup to query the DNS system for the authorized domain.
 
 The command returned DNS resolution information for the domain.
 
-**Resolved IP address observed in my lab:**
-
-**[INSERT YOUR IP ADDRESS]**
 
 ### Security Relevance
 
@@ -268,7 +265,7 @@ Identifying a WAF can help security professionals understand part of the defensi
 
 ### Evidence
 
-![INSERT SCREENSHOT – WAFW00F RESULT](Screenshots/pm1t6.png)
+![INSERT SCREENSHOT – WAFW00F RESULT](Screenshots/pm1t5.png)
 
 ---
 
@@ -296,9 +293,7 @@ I used DNSRecon to perform DNS enumeration against the authorized domain.
 
 The tool returned DNS-related information such as available records and infrastructure information.
 
-**Important results observed:**
 
-**[INSERT YOUR DNSRECON RESULTS]**
 
 ### Security Relevance
 
@@ -529,7 +524,7 @@ The topology displayed the discovered network hosts and their relationships base
 
 **Saved topology file:**
 
-`[INSERT YOUR PDF FILE NAME]`
+![file](Screenshots/znmp3.pdf)
 
 ---
 
