@@ -116,7 +116,7 @@ WHOIS information can help a security professional understand the publicly visib
 
 ### Evidence
 
-[WHOIS RESULT](pm1t1.png)
+[WHOIS RESULT](pm1task1.png)
 
 ---
 
@@ -146,7 +146,7 @@ The output provided information about technologies detected on the website.
 
 **Actual result from my lab:**
 
-**[INSERT YOUR WHATWEB RESULTS HERE]**
+![result](pm1t2.png)
 
 ### Security Relevance
 
