@@ -8,7 +8,7 @@
 
 | **Details**                         | **Information**                                                                                       |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Pentester Name**                  | **[YOUR NAME]**                                                                                       |
+| **Pentester Name**                  | **SUVARNA**                                                                                       |
 | **Program/Batch**                   | **B082-Networkwalks**                                                                                 |
 | **Date**                            | **18 September 2026**                                                                                 |
 | **Modules Completed**               | **W2-PM1 – Multiple Kali Tools**<br>**W2-PM3 – Maltego Footprinting**<br>**W2-PM5 – Zenmap Scanning** |
@@ -354,11 +354,11 @@ Maltego returned email-related entities associated with the target domain.
 
 **Number of email addresses identified:**
 
-[INSERT NUMBER]
+4
 
 **Email addresses identified:**
 
-[INSERT YOUR ACTUAL MALTEGO RESULTS]
+![email](Screenshots/znem.png.png)
 
 ### Security Relevance
 
