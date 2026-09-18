@@ -116,7 +116,7 @@ WHOIS information can help a security professional understand the publicly visib
 
 ### Evidence
 
-![WHOIS RESULT](pm1task1.png)
+![WHOIS RESULT](Screenshots/pm1task1.png)
 
 
 
@@ -154,7 +154,7 @@ Technology fingerprinting can help security professionals understand the technol
 
 ### Evidence
 
-![WHATWEB RESULT](pm1t2.png)
+![WHATWEB RESULT](Screenshots/pm1t2.png)
 
 ---
 
@@ -192,7 +192,7 @@ DNS resolution provides information about the infrastructure associated with a d
 
 ### Evidence
 
-![NSLOOKUP RESULT](pm1t3.png)
+![NSLOOKUP RESULT](Screenshots/pm1t3.png)
 
 ---
 
@@ -230,7 +230,7 @@ HTTP response headers can provide useful technical information about a web appli
 
 ### Evidence
 
-![CURL RESULT](pm1t4.png)
+![CURL RESULT](Screenshots/pm1t4.png)
 
 ---
 
